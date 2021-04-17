@@ -1,3 +1,3 @@
 <x-layouts.default>
-    {{ $slot }}
+    <livewire:my-lists />
 </x-layouts.default>
