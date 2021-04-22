@@ -12,6 +12,7 @@ class CreateProgrammingLanguagesTable extends Migration
         Schema::create('programming_languages', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->unsignedInteger('position')->default(0);
             $table->foreignIdFor(Group::class);
             $table->timestamps();
         });

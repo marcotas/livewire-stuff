@@ -1,7 +1,7 @@
 @props(['group', 'language'])
 
 <div class="cursor-pointer rounded-lg p-4 bg-white hover:bg-gray-50 flex justify-between items-center"
-    wire:key="language-{{ $group->id }}-{{ $language->id }}">
+    wire:key="language-{{ $group->id }}-{{ $language->id }}" {{ $attributes }}>
     <span>{{ $language->name }}</span>
 
     <button wire:click="removeLanguage({{ $language->id }})">
